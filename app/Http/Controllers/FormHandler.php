@@ -34,8 +34,7 @@ class FormHandler extends Controller
             'created_at' => date('Y-m-d H:i:s')
         ]);
 
-        $route = \Route::current()->getUri();
-        event(new FormEvent(array_merge($data, ['route' => $route])));
+        event(new FormEvent($data));
 
         return response()->json(['status' => 'ok']);
     }

@@ -26,14 +26,28 @@ class WebhookClient
 
     public function execute(array $data)
     {
-        $nickname = empty($data['nickname']) ? 'Anonymous' : $data['nickname'];
-        $role = empty($data['route']) ? 'No-role' : basename($data['route']);
-
         $this->httpClient->post($this->hookUri, [
             'form_params' => [
-                'username' => 'Resume Informer',
-                'content' => 'New member request: ' . sprintf('`%s`, `%s`', $role, $nickname),
+                'username' => 'New member request',
+                'content' => $this->prepareData($data),
             ]
         ]);
+    }
+
+    protected function prepareData(array $data)
+    {
+        $result = '';
+
+        // Hide user email
+        unset($data['email']);
+
+        // Remove empty fields
+        $data = array_filter($data);
+
+        foreach ($data as $k => $v) {
+            $result .= sprintf("`%s: %s`\n", $k, $v);
+        }
+
+        return $result;
     }
 }
