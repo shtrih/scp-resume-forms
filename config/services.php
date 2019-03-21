@@ -35,4 +35,7 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'discord' => [
+        'hook_uri' => env('DISCORD_HOOK_URI'),
+    ],
 ];

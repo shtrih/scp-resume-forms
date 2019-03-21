@@ -15,4 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('programmers');
+Route::group(['prefix' => 'resume'], function () {
+    Route::post('programmer', 'FormHandler@store');
+    Route::post('artist', 'FormHandler@store');
+    Route::post('translator', 'FormHandler@store');
+    Route::post('voice-actor', 'FormHandler@store');
+    Route::post('sound-composer', 'FormHandler@store');
+});
