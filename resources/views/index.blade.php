@@ -312,7 +312,9 @@
 <script>
     $(document).ready(function () {
         $('select').formSelect();
-        $('.collapsible').collapsible();
+        $('.collapsible').collapsible({
+            accordion: false
+        });
 
         var success = $('#modal-success').modal(),
             error = $('#modal-error').modal()
