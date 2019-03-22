@@ -48,7 +48,7 @@
                         <div class="row">
                             <div class="input-field col m6 s12">
                                 <input id="nickname" type="text" class="validate blue-grey-text text-lighten-5"
-                                       name="nickname" pattern="[a-zA-Z]{2,32}" required data-length="32"/>
+                                       name="nickname" pattern="[a-zA-Z0-9_]{2,32}" required data-length="32"/>
                                 <label for="nickname">Nickname</label>
                                 <span class="helper-text">Должен состоять из латинских буков. Для аккаунта в Phabricator (менеджер тасков).</span>
                             </div>
