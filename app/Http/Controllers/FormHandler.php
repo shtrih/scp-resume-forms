@@ -44,6 +44,9 @@ class FormHandler extends Controller
         $result = '';
 
         foreach ($data as $k => $v) {
+            // Use $ symbol to get unique field names
+            $k = str_replace('$', '', $k);
+
             $result .= sprintf("%s: %s\n", $k, $v);
         }
 
