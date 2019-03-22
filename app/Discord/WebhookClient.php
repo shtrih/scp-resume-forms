@@ -48,8 +48,10 @@ class WebhookClient
             // Use $ symbol to get unique field names
             $k = str_replace('$', '', $k);
 
-            $result .= sprintf("`%s: %s`\n", $k, $v);
+            $result .= sprintf("%s: %s\n", $k, $v);
         }
+
+        $result = '```' . $result . '```';
 
         return $result;
     }
