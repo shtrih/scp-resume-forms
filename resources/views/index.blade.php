@@ -25,24 +25,24 @@
                 <div class="card-content" style="margin-bottom: 2rem">
                     <span class="card-title center white-text" style="margin-bottom: 1.4rem"><b>Форма для вступления в сообщество</b></span>
                     <p class="center white-text">Пожалуйста, ответьте на следующие вопросы, если вы хотите вступить в
-                        наше сообщество;<br> Данная информация появится в нашем <a href="#!">публичном дискорде</a>.</p>
+                        наше сообщество;<br> Данная информация появится в нашем <a href="https://discord.gg/wE2j6vW">публичном дискорде</a>.</p>
                     <br>
                     <form id="form" method="post" action="/resume">
                         <p class="white-text">1) Личная информация</p>
                         <div class="row">
                             <div class="input-field col m6 s12">
-                                <input id="first_name" type="text" class="validate" required name="firstname" />
+                                <input id="first_name" type="text" class="validate blue-grey-text text-lighten-5" required name="firstname" />
                                 <label for="first_name">Имя</label>
                             </div>
                             <div class="input-field col m6 s12">
-                                <input id="last_name" type="text" class="validate" name="lastname" />
+                                <input id="last_name" type="text" class="validate blue-grey-text text-lighten-5" name="lastname" />
                                 <label for="last_name">Фамилия</label>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="email" type="email" class="validate" name="email" required />
+                                <input id="email" type="email" class="validate blue-grey-text text-lighten-5" name="email" required />
                                 <label for="email">Email</label>
                                 <span class="helper-text" data-error="Email введён неправильно"
                                       data-success="Правильный email!">Этот input может сам проверить мыло на валидность</span>
@@ -51,7 +51,7 @@
 
                         <div class="row">
                             <div class="input-field col s12">
-                                <input id="nickname" type="text" class="validate" name="nickname" required />
+                                <input id="nickname" type="text" class="validate blue-grey-text text-lighten-5" name="nickname" required />
                                 <label for="nickname">Nickname</label>
                             </div>
                         </div>
@@ -59,7 +59,7 @@
                         <p class="white-text">3) Расскажите о себе</p>
                         <div class="row">
                             <div class="input-field col s12">
-                                <textarea id="textarea1" class="materialize-textarea" data-length="120"></textarea>
+                                <textarea id="textarea1" class="materialize-textarea blue-grey-text text-lighten-5" data-length="120"></textarea>
                                 <label for="textarea1">Этот input расширяется под текст автоматом</label>
                             </div>
                         </div>
@@ -94,7 +94,7 @@
                             Какие цвета вы бы посчитали годными?</p>
                         <div class="row">
                             <div class="input-field col s12">
-                                <select multiple>
+                                <select multiple class="blue-grey-text text-lighten-5">
                                     <option value="" disabled selected>Выберите из предложенного</option>
                                     <option value="1">Зелёный</option>
                                     <option value="2">Зелёнистый</option>
@@ -113,8 +113,8 @@
                 </div>
                 <div class="card-action">
                     <p class="white-text" style="margin-top: 0">Появились вопросы?</p>
-                    <a href="#!">Группа ВКонтакте</a>
-                    <a href="#!">Дискорд канал</a>
+                    <a href="https://vk.com/club175043828">Группа ВК</a>
+                    <a href="https://discord.gg/wE2j6vW">Сервер Discord</a>
                 </div>
             </div>
         </div>
@@ -124,8 +124,8 @@
 <!-- Modal -->
 <div id="modal-success" class="modal green lighten-5">
     <div class="modal-content">
-        <h4>Thank you!</h4>
-        <p>Your data sent!</p>
+        <h4>Спасибо!</h4>
+        <p>Данные отправлены!</p>
     </div>
     <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Ok</a>
@@ -133,7 +133,7 @@
 </div>
 <div id="modal-error" class="modal">
     <div class="modal-content red lighten-5">
-        <h4>Sorry!</h4>
+        <h4>Ошибка!</h4>
         <p>Failed to save data!</p>
     </div>
     <div class="modal-footer">
