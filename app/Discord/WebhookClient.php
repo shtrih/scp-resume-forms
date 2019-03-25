@@ -39,7 +39,7 @@ class WebhookClient
         $result = '';
 
         // Hide user email
-        unset($data['email']);
+        // unset($data['email']);
 
         // Remove empty fields
         $data = array_filter($data);
