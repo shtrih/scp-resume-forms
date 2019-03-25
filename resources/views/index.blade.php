@@ -501,7 +501,22 @@
         $('#form').on('submit', function (e) {
             e.preventDefault();
 
-            $.post("/resume", $(this).serialize(), function (data) {
+            var formFields = $(this).children(':not(.collapsible)').find('input,textarea');
+
+            $('.collapsible-body').each(function () {
+                var filledRoleFields = $('input:not([type="hidden"],[type="radio"]),textarea,[type="radio"]:checked', this).filter(function () {
+                    return this.value;
+                });
+
+                if (filledRoleFields.length) {
+                    formFields = formFields
+                        .add($('[type="hidden"]', this))
+                        .add(filledRoleFields)
+                    ;
+                }
+            });
+
+            $.post("/resume", formFields.serialize(), function () {
                 success.modal('open');
             }).fail(function(data) {
                 error
