@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <style>
         p {
-            font-size: 1.2rem; 
+            /*font-size: 1.2rem; */
             margin-bottom: 0.4rem;
         }
         input, textarea, select,
@@ -21,24 +21,24 @@
         .card-content > .card-title.head {
             margin-bottom: 1.4rem
         }
-
         .collapsible,
         .collapsible-header,
-        .collapsible-body
-        {
+        .collapsible-body {
             border-color: #37474f;
         }
         .collapsible .collapsible-header {
             background-color: #546e7a ;
         }
-		
 		.label-ellipsis {
 			text-overflow: ellipsis;
 			white-space: nowrap;
 			overflow: hidden;
 			width: 100%;
 		}
-
+        [type="radio"]:not(:checked)+span:before,
+        [type="radio"]:not(:checked)+span:after {
+            border-color: #ddd;
+        }
     </style>
 </head>
 <body class="blue-grey lighten-4">
@@ -108,7 +108,7 @@
                         </div>
 
                         <p>Вопросы по специализации.</p>
-						<span class="helper-text grey-text">Если вашей специализации нет в списке, мы с вами лично свяжемся по этому поводу.</span>
+                        <span class="helper-text grey-text">Если вашей специализации нет в списке, то уже после вступления вам будут заданы вопросы по ней.</span>
                         <ul class="collapsible blue-grey darken-3">
                             <li>
                                 <div class="collapsible-header"><i class="material-icons">palette</i>Роль «2D-художник»</div>
@@ -165,22 +165,31 @@
                                     </div>
 
                                     <br />
-                                    <!-- Ваш уровень знания иностранного языка по Common European Framework of Reference (CEFR):
-                                    <div class="input-field inline">
-                                        <input id="text9" type="text" name="Увроень CEFR" />
-                                        <label for="text9"></label>
-                                    </div> -->
-									Ваш уровень знания иностранного языка по Common European Framework of Reference (CEFR):
-									<div class="input-field inline">
-										<select name="Уровень знания иностранного">
-											<option value="" disabled selected>Выберите...</option>
-											<option value="B1">B1</option>
-											<option value="B2">B2</option>
-											<option value="C1">C1</option>
-											<option value="C2">C2</option>
-										</select>
-										<label>Уровень CEFR</label>
-									</div>
+                                    Ваш уровень знания иностранного языка по Common European Framework of Reference (CEFR):
+                                    <p>
+                                        <label>
+                                            <input class="with-gap" name="Уровень знания CEFR" type="radio" value="B1" />
+                                            <span>B1</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input class="with-gap" name="Уровень знания CEFR" type="radio" value="B2" />
+                                            <span>B2</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input class="with-gap" name="Уровень знания CEFR" type="radio" value="C1" />
+                                            <span>C1</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input class="with-gap" name="Уровень знания CEFR" type="radio" value="C2" />
+                                            <span>C2</span>
+                                        </label>
+                                    </p>
 
                                     <br />
                                     Сколько лет вы изучаете интересующий вас иностранный язык?
@@ -377,14 +386,6 @@
                                         <label for="text18"></label>
                                     </div>
 
-                                    <!-- <p>Примерный опыт в сфере:</p>
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <textarea id="textarea20" class="materialize-textarea" name="Примерный опыт в сфере"></textarea>
-                                            <label for="textarea20"></label>
-                                        </div>
-                                    </div> -->
-
                                     <p>Известные технологии, можно ключевыми словами:</p>
                                     <div class="row">
                                         <div class="input-field col s12">
@@ -443,7 +444,6 @@
 										</div>
 									</div>
 								</div>
-								
 							</li>
                         </ul>
                         
