@@ -111,7 +111,7 @@
                         <span class="helper-text grey-text">Если вашей специализации нет в списке, то уже после вступления вам будут заданы вопросы по ней.</span>
                         <ul class="collapsible blue-grey darken-3">
                             <li>
-                                <div class="collapsible-header"><i class="material-icons">palette</i>Роль «2D-художник»</div>
+                                <div class="collapsible-header"><i class="material-icons">palette</i>2D-художник</div>
                                 <div class="collapsible-body">
                                     <input type="hidden" name="🎨Роль: 2D-художник" value="🎨🎨🎨" />
 
@@ -142,6 +142,41 @@
                                         <div class="input-field col s12">
                                             <input id="text6" type="text" name="Опыт рисования для игр" />
                                             <label for="text6"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="collapsible-header"><i class="material-icons">3d_rotation</i>3D-художник</div>
+                                <div class="collapsible-body">
+                                    <input type="hidden" name="📏Роль: 3D художник" value="📏📏📏" />
+
+                                    Примерный опыт в сфере:
+                                    <div class="input-field inline">
+                                        <input id="text17" type="text" name="Опыт$$$$$" />
+                                        <label for="text17"></label>
+                                    </div>
+
+                                    <p>Предпочитаемый 3D редактор:</p>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea id="textarea17" class="materialize-textarea" name="Предпочитаемый 3D редактор"></textarea>
+                                            <label for="textarea17"></label>
+                                        </div>
+                                    </div>
+
+                                    <p>Известные технологии в сфере:</p>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea id="textarea18" class="materialize-textarea" name="Известные технологии в сфере"></textarea>
+                                            <label for="textarea18"></label>
+                                        </div>
+                                    </div>
+                                    <p>Опыт в анимировании 3D моделей:</p>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea id="textarea19" class="materialize-textarea" name="Опыт в анимировании 3D моделей"></textarea>
+                                            <label for="textarea19"></label>
                                         </div>
                                     </div>
                                 </div>
@@ -205,6 +240,13 @@
                                             <label for="text11"></label>
                                         </div>
                                     </div>
+
+                                    <p>От себя добавлю:</p>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea class="materialize-textarea" name="От себя"></textarea>
+                                        </div>
+                                    </div>
                                 </div>
                             </li>
                             <li>
@@ -261,7 +303,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="collapsible-header"><i class="material-icons">mic</i>Роль «Актер озвучивания»</div>
+                                <div class="collapsible-header"><i class="material-icons">mic</i>Актер озвучивания</div>
                                 <div class="collapsible-body">
                                     <input type="hidden" name="🎤Роль: Актер озвучания" value="🎤🎤🎤" />
 
@@ -305,7 +347,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="collapsible-header"><i class="material-icons">code</i>Роль «Программист»</div>
+                                <div class="collapsible-header"><i class="material-icons">code</i>Программист</div>
                                 <div class="collapsible-body">
                                     <input type="hidden" name="💻Роль: Программист" value="💻💻💻" />
 
@@ -341,42 +383,7 @@
                                 </div>
                             </li>
                             <li>
-                                <div class="collapsible-header"><i class="material-icons">3d_rotation</i>Роль «3D-художник»</div>
-                                <div class="collapsible-body">
-                                    <input type="hidden" name="📏Роль: 3D художник" value="📏📏📏" />
-
-                                    Примерный опыт в сфере:
-                                    <div class="input-field inline">
-                                        <input id="text17" type="text" name="Опыт$$$$$" />
-                                        <label for="text17"></label>
-                                    </div>
-
-                                    <p>Предпочитаемый 3D редактор:</p>
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <textarea id="textarea17" class="materialize-textarea" name="Предпочитаемый 3D редактор"></textarea>
-                                            <label for="textarea17"></label>
-                                        </div>
-                                    </div>
-
-                                    <p>Известные технологии в сфере:</p>
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <textarea id="textarea18" class="materialize-textarea" name="Известные технологии в сфере"></textarea>
-                                            <label for="textarea18"></label>
-                                        </div>
-                                    </div>
-                                    <p>Опыт в анимировании 3D моделей:</p>
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <textarea id="textarea19" class="materialize-textarea" name="Опыт в анимировании 3D моделей"></textarea>
-                                            <label for="textarea19"></label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="collapsible-header"><i class="material-icons">build</i>Роль «Системный администратор»</div>
+                                <div class="collapsible-header"><i class="material-icons">build</i>Системный администратор</div>
                                 <div class="collapsible-body">
                                     <input type="hidden" name="🔧Роль: системный администратор" value="🔧🔧🔧" />
 
@@ -403,7 +410,7 @@
                                 </div>
                             </li>
 							<li>
-								<div class="collapsible-header"><i class="material-icons">gamepad</i>Роль геймдизайнера</div>
+                                <div class="collapsible-header"><i class="material-icons">gamepad</i>Геймдизайнер</div>
                                 <div class="collapsible-body">
                                     <input type="hidden" name="🎮Роль: геймдизайнер" value="🎮🎮🎮" />
 								
