@@ -35,6 +35,8 @@
 			overflow: hidden;
 			width: 100%;
 		}
+        [type="checkbox"]+span:not(.lever):before,
+        [type="checkbox"]:not(.filled-in)+span:not(.lever):after,
         [type="radio"]:not(:checked)+span:before,
         [type="radio"]:not(:checked)+span:after {
             border-color: #ddd;
@@ -238,13 +240,6 @@
                                         <div class="input-field col s12">
                                             <input id="text11" type="text" name="Разговор на иностранном языке" />
                                             <label for="text11"></label>
-                                        </div>
-                                    </div>
-
-                                    <p>От себя добавлю:</p>
-                                    <div class="row">
-                                        <div class="input-field col s12">
-                                            <textarea class="materialize-textarea" name="От себя"></textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -452,8 +447,75 @@
 									</div>
 								</div>
 							</li>
+							<li>
+                                <div class="collapsible-header"><i class="material-icons">group</i>Community manager</div>
+                                <div class="collapsible-body">
+                                    <input type="hidden" name="👥Роль: community manager" value="👥👥👥" />
+
+                                    <p>Опыт поддержки и развития сообществ</p>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea id="textarea25" class="materialize-textarea" name="Опыт поддержки и развития сообществ"></textarea>
+                                            <label for="textarea25"></label>
+                                        </div>
+                                    </div>
+                                    <p>Социальные навыки</p>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea id="textarea26" class="materialize-textarea" name="Социальные навыки"></textarea>
+                                            <label for="textarea26"></label>
+                                        </div>
+                                    </div>
+                                    <p>Почему вы хотите быть community manager?</p>
+                                    <div class="row">
+                                        <div class="input-field col s12">
+                                            <textarea id="textarea27" class="materialize-textarea" name="Почему хотите быть community manager?"></textarea>
+                                            <label for="textarea27"></label>
+                                        </div>
+                                    </div>
+
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" name="Грамотный русский" />
+                                            <span>Грамотное владение русским языком</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" name="Чёткие формулировки" />
+                                            <span>Умение хорошо формулировать текст</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" name="Желание быть в курсе" />
+                                            <span>Большое желание быть в курсе происходящего в проекте</span>
+                                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                                            <input type="checkbox" name="Желание помогать" />
+                                            <span>Большое желание помогать остальной команде</span>
+                                        </label>
+                                    </p>
+                                </div>
+                            </li>
                         </ul>
-                        
+
+                        <p>От себя добавлю:</p>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <textarea class="materialize-textarea" name="От себя"></textarea>
+                            </div>
+                        </div>
+
+                        <p>
+                            <label>
+                                <input type="checkbox" name="Есть 18 лет" />
+                                <span>Мне больше 18 лет</span>
+                            </label>
+                        </p>
+
                         <button class="btn waves-effect waves-light right" type="submit" name="action">Отправить
                             <i class="material-icons right">send</i>
                         </button>
