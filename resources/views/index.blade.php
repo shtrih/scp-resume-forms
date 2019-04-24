@@ -573,7 +573,7 @@
             var formFields = $(this).children(':not(.collapsible)').find('input,textarea');
 
             $('.collapsible-body').each(function () {
-                var filledRoleFields = $('input:not([type="hidden"],[type="radio"]),textarea,[type="radio"]:checked', this).filter(function () {
+                var filledRoleFields = $('input:not([type="hidden"],[type="radio"],[type="checkbox"]),textarea,:checked', this).filter(function () {
                     return this.value;
                 });
 
