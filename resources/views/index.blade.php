@@ -123,7 +123,7 @@
                                 <p>
                                     <label>
                                         <input type="checkbox" name="Роль[]" value="@WebDevelopers" />
-                                        <span>Weeb-программист</span>
+                                        <span>Web-программист</span>
                                     </label>
                                 </p>
                                 <p>
