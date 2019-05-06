@@ -642,6 +642,14 @@
             accordion: false
         });
 
+        // Prevent form submitting on hit Enter
+        $(document).on('keydown', ':input:not(textarea):not(:submit)', function(e) {
+            if (e.key === "Enter") {
+                e.preventDefault();
+                return false;
+            }
+        });
+
         var success = $('#modal-success').modal(),
             error = $('#modal-error').modal()
         ;
