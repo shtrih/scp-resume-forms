@@ -89,7 +89,7 @@
 
                         <p>Роли, с которыми вы хотите попасть в команду сообщества:</p>
                         <div class="row">
-                            <div class="input-field col s11 offset-s1">
+                            <div class="input-field col s12">
                                 <p>
                                     <label>
                                         <input type="checkbox" name="Роль[]" value="@2D Artists" />
