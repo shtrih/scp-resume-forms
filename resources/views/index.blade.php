@@ -39,7 +39,10 @@
         [type="checkbox"]:not(.filled-in)+span:not(.lever):after,
         [type="radio"]:not(:checked)+span:before,
         [type="radio"]:not(:checked)+span:after {
-            border-color: #ddd;
+            border-color: #ccc;
+        }
+        label {
+            color: #bbb;
         }
     </style>
 </head>
@@ -86,10 +89,67 @@
 
                         <p>Роли, с которыми вы хотите попасть в команду сообщества:</p>
                         <div class="row">
-                            <div class="input-field col s12">
-                                <input id="text1" type="text" name="Роли" />
-                                <label class="label-ellipsis" for="text1">2D/3D-художник, программист, переводчик, актёр озвучания, композитор и т.д.</label>
-                                <span class="helper-text">Можно перечислить несколько.</span>
+                            <div class="input-field col s11 offset-s1">
+                                <p>
+                                    <label>
+                                        <input type="checkbox" name="Роль[]" value="@2D Artists" />
+                                        <span>2D-художник</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" name="Роль[]" value="@3D Artists" />
+                                        <span>3D-художник</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" name="Роль[]" value="@Sound and music" />
+                                        <span>Звуки и музыка</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" name="Роль[]" value="@VoiceActors" />
+                                        <span>Актер озвучивания</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" name="Роль[]" value="@Programmers" />
+                                        <span>Программист</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" name="Роль[]" value="@WebDevelopers" />
+                                        <span>Weeb-программист</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" name="Роль[]" value="@Community manager" />
+                                        <span>Менеджер сообщества</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" name="Роль[]" value="@Translators" />
+                                        <span>Переводчик</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" name="Роль[]" value="@System Admins" />
+                                        <span>Системный администратор</span>
+                                    </label>
+                                </p>
+                                <p>
+                                    <label>
+                                        <input type="checkbox" name="Роль[]" value="@GameDesigners" />
+                                        <span>Геймдизайнер</span>
+                                    </label>
+                                </p>
                             </div>
                         </div>
 
@@ -110,7 +170,7 @@
                         </div>
 
                         <p>Вопросы по специализации.</p>
-                        <span class="helper-text grey-text">Если вашей специализации нет в списке, то уже после вступления вам будут заданы вопросы по ней.</span>
+                        {{--<span class="helper-text grey-text">Если вашей специализации нет в списке, то уже после вступления вам будут заданы вопросы по ней.</span>--}}
                         <ul class="collapsible blue-grey darken-3">
                             <li>
                                 <div class="collapsible-header"><i class="material-icons">palette</i>2D-художник</div>

@@ -47,6 +47,8 @@ class WebhookClient
         foreach ($data as $k => $v) {
             // Use $ symbol to get unique field names
             $k = str_replace('$', '', $k);
+            // Handle array of roles
+            $v = join(', ', (array)$v);
 
             $result .= sprintf("%s: %s\n", $k, $v);
         }
